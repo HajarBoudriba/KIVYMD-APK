@@ -5,8 +5,6 @@ from kivy.core.window import Window
 kv='''
 <MySwiper@MDSwiperItem>
     FilImage:
-        #source:"H:\Python\Kivy\Cours\learn\KivyApp\img\CSS.png"
-        #radius:[20,]
 MDScreen:
     MDTopAppBar:
         id:toolbar
@@ -19,27 +17,27 @@ MDScreen:
         y:root.height - self.height - toolbar.height - dp(10)
         MDSwiperItem:
             FitImage:
-                source:"img\Php.png"
+                source:"./img/Php.png"
                 radius: [20,0]
         MDSwiperItem:
             FitImage:
-                source:"img\CSS.png"
+                source:"./img/CSS.png"
                 radius: [20,0]
         MDSwiperItem:
             FitImage:
-                source:"img\HTML.png"
+                source:"./img/HTML.png"
                 radius: [20,0]
         MDSwiperItem:
             FitImage:
-                source:"img\Python.png"
+                source:"./img/Python.png"
                 radius: [20,0]
         MDSwiperItem:
             FitImage:
-                source:"img\SQL.png"
+                source:"./img/SQL.png"
                 radius: [20,0]
         MDSwiperItem:
             FitImage:
-                source:"img\perl.png"
+                source:"./img/perl.png"
                 radius: [20,0]
 '''
 class Myapp(MDApp):
